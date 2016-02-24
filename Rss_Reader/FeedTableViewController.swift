@@ -55,10 +55,10 @@ class FeedTableViewController: UITableViewController, ComposerDelegate {
         
         if let cell = sender as? CustomCell {
             
-            //let controller = segue.destinationViewController as! FeedItemController
+            let controller = segue.destinationViewController as! FeedItemController
             
             //Передача информации о новости
-            //controller.feedItem = cell.feedItem
+            controller.feedItem = cell.feedItem
             
         }
     }
