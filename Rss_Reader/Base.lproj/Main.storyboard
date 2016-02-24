@@ -98,42 +98,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rss-logo" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-RG-sNJ">
-                                <rect key="frame" x="20" y="72" width="560" height="300"/>
+                                <rect key="frame" x="20" y="72" width="560" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="SDc-4u-FHX"/>
+                                    <constraint firstAttribute="height" constant="200" id="SDc-4u-FHX"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9B-Ai-Dmh">
-                                <rect key="frame" x="20" y="395" width="560" height="72"/>
+                                <rect key="frame" x="20" y="273" width="560" height="102"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="72" id="bwS-uy-3YC"/>
+                                    <constraint firstAttribute="height" constant="102" id="bwS-uy-3YC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" layoutMarginsFollowReadableWidth="YES" text="Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltv-lD-Tob">
-                                <rect key="frame" x="20" y="482" width="560" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqS-Mh-MnV">
+                                <rect key="frame" x="20" y="383" width="560" height="209"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="trailing" secondItem="ltv-lD-Tob" secondAttribute="trailing" id="87c-36-YnE"/>
+                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="trailing" secondItem="xHG-RG-sNJ" secondAttribute="trailing" id="7Wh-wg-0Vo"/>
+                            <constraint firstItem="pzi-9C-Vfe" firstAttribute="top" secondItem="gqS-Mh-MnV" secondAttribute="bottom" constant="8" symbolic="YES" id="Pdf-fA-sfv"/>
                             <constraint firstItem="xHG-RG-sNJ" firstAttribute="trailing" secondItem="RWh-bP-VLJ" secondAttribute="trailingMargin" id="QKz-ye-aJo"/>
-                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="leading" secondItem="ltv-lD-Tob" secondAttribute="leading" id="SFM-Si-9xJ"/>
-                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="top" secondItem="xHG-RG-sNJ" secondAttribute="bottom" constant="23" id="VVO-eI-7zU"/>
-                            <constraint firstItem="ltv-lD-Tob" firstAttribute="trailing" secondItem="RWh-bP-VLJ" secondAttribute="trailingMargin" id="YYa-kM-lUa"/>
+                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="top" secondItem="xHG-RG-sNJ" secondAttribute="bottom" constant="1" id="VVO-eI-7zU"/>
                             <constraint firstItem="xHG-RG-sNJ" firstAttribute="top" secondItem="KnP-Vx-Pgn" secondAttribute="bottom" constant="8" id="agc-sB-rpX"/>
+                            <constraint firstItem="gqS-Mh-MnV" firstAttribute="top" secondItem="T9B-Ai-Dmh" secondAttribute="bottom" constant="8" id="bCD-S2-hty"/>
                             <constraint firstItem="xHG-RG-sNJ" firstAttribute="leading" secondItem="RWh-bP-VLJ" secondAttribute="leadingMargin" id="g8E-Fg-q1U"/>
-                            <constraint firstItem="ltv-lD-Tob" firstAttribute="top" secondItem="T9B-Ai-Dmh" secondAttribute="bottom" constant="15" id="kAn-VE-ScV"/>
-                            <constraint firstItem="ltv-lD-Tob" firstAttribute="leading" secondItem="RWh-bP-VLJ" secondAttribute="leadingMargin" id="pXi-xl-dEC"/>
+                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="leading" secondItem="gqS-Mh-MnV" secondAttribute="leading" id="jtJ-pf-ADw"/>
+                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="leading" secondItem="xHG-RG-sNJ" secondAttribute="leading" id="myc-BW-4iA"/>
+                            <constraint firstItem="T9B-Ai-Dmh" firstAttribute="trailing" secondItem="gqS-Mh-MnV" secondAttribute="trailing" id="reR-Uw-ukw"/>
                         </constraints>
                         <connections>
                             <outlet property="FeedImage" destination="xHG-RG-sNJ" id="agC-gz-1DQ"/>
-                            <outlet property="FeedText" destination="ltv-lD-Tob" id="ZMU-UD-ao0"/>
+                            <outlet property="FeedText" destination="gqS-Mh-MnV" id="mcy-6b-Uz6"/>
                             <outlet property="FeedTitle" destination="T9B-Ai-Dmh" id="6QL-2i-oQ2"/>
                         </connections>
                     </view>
