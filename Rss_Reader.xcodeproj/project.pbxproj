@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1D125A1C7E231C00CA2B83 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D12591C7E231C00CA2B83 /* FeedTableViewController.swift */; };
+		0A1D125D1C7E268E00CA2B83 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D125C1C7E268E00CA2B83 /* CustomCell.swift */; };
 		0A803EA11C7E15AD00FF436D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A803EA01C7E15AD00FF436D /* AppDelegate.swift */; };
-		0A803EA31C7E15AD00FF436D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A803EA21C7E15AD00FF436D /* ViewController.swift */; };
 		0A803EA61C7E15AD00FF436D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A803EA41C7E15AD00FF436D /* Main.storyboard */; };
 		0A803EA81C7E15AD00FF436D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A803EA71C7E15AD00FF436D /* Assets.xcassets */; };
 		0A803EAB1C7E15AD00FF436D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A803EA91C7E15AD00FF436D /* LaunchScreen.storyboard */; };
@@ -27,9 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1D12591C7E231C00CA2B83 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		0A1D125C1C7E268E00CA2B83 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		0A803E9D1C7E15AD00FF436D /* Rss_Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rss_Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A803EA01C7E15AD00FF436D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A803EA21C7E15AD00FF436D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A803EA51C7E15AD00FF436D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A803EA71C7E15AD00FF436D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A803EAA1C7E15AD00FF436D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1D12581C7E22C700CA2B83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D12591C7E231C00CA2B83 /* FeedTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0A1D125B1C7E262900CA2B83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A1D125C1C7E268E00CA2B83 /* CustomCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		0A803E941C7E15AD00FF436D = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +102,9 @@
 		0A803E9F1C7E15AD00FF436D /* Rss_Reader */ = {
 			isa = PBXGroup;
 			children = (
+				0A1D125B1C7E262900CA2B83 /* View */,
+				0A1D12581C7E22C700CA2B83 /* Controller */,
 				0A803EA01C7E15AD00FF436D /* AppDelegate.swift */,
-				0A803EA21C7E15AD00FF436D /* ViewController.swift */,
 				0A803EA41C7E15AD00FF436D /* Main.storyboard */,
 				0A803EA71C7E15AD00FF436D /* Assets.xcassets */,
 				0A803EA91C7E15AD00FF436D /* LaunchScreen.storyboard */,
@@ -272,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A803EA31C7E15AD00FF436D /* ViewController.swift in Sources */,
 				0A803EA11C7E15AD00FF436D /* AppDelegate.swift in Sources */,
+				0A1D125D1C7E268E00CA2B83 /* CustomCell.swift in Sources */,
+				0A1D125A1C7E231C00CA2B83 /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
