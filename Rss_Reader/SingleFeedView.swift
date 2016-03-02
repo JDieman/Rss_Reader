@@ -13,7 +13,7 @@ class SingleFeedView: UIView {
     @IBOutlet weak var FeedImage: UIImageView!
     @IBOutlet weak var FeedTitle: UILabel!
     
-    @IBOutlet weak var FeedText: UITextView!
+    @IBOutlet weak var FeedText: UILabel!
     
     //Установка информации о новости
     func setFeedInfo(FeedItem feedItem: FeedItem?){
